@@ -1,0 +1,26 @@
+#startDiv
+{
+	display: inline-block;
+    position: fixed;
+    top: -80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 450px;
+    height: 100px;
+    margin: auto;	
+	color: #423C3C;
+}	
+
+#startButton 
+{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    height: 30px;
+    margin: auto;	
+}

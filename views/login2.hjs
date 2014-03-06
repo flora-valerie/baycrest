@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="kinetic-v4.6.0.min.js"></script>
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/login2.css" />
+</head>
+
+<body onkeydown="if (event.keyCode == 13) document.getElementById('logbutton').click()">
+	<div id="wrapper">
+		<form name="login-form" class="login-form">
+	
+			<div class="header">
+			<h1>Experiment Login</h1>
+			</div>
+		
+			<div class="content">
+			<input name="username" type="text" class="input username" placeholder="Email" />
+			<input name="password" type="password" class="input password" placeholder="Invitation" />
+			<div class="pass-icon"></div>		
+			</div>
+
+			<div class="footer">
+			<input type="button" onclick="check(this.form)" value="Login" class="button" id="logbutton" />
+			<!--<input type="submit" name="submit" value="Login" onclick="check(this.form)" class="button" /> -->
+			</div>
+		</form>
+	</div>
+<div class="gradient"></div>
+
+<script language="javascript">
+		function check(form)/*function to check userid & password*/
+		{
+		
+		 if(form.username.value == "e" && form.password.value == "i")
+		  {
+			window.open('/successlogin')
+		  }
+		 else
+		 {
+		   alert("Error Password or Username")
+		  }
+		}
+</script>
+</body>
